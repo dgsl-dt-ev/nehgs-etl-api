@@ -22,6 +22,7 @@ builder.Services.AddApplicationServices(builder.Configuration);
 
 var app = builder.Build();
 
+// use middleware
 app.UseApplicationMiddleware();
 
 app.Run();
